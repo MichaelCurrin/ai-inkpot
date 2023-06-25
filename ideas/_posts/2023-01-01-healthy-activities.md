@@ -2,8 +2,7 @@
 
 ---
 title: Self-care healthy activities
-prompt: |
-  give me a list of health activities to do alone at home or in the city, for variety. a different activity each day
+prompt: give me a list of health activities to do alone at home or in the city, for variety. a different activity each day
 ---
 
 
