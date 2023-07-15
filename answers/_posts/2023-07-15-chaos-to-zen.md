@@ -1,5 +1,5 @@
 ---
-title: "From Chaos to Zen: How These 10 Unusual Habits Can Transform Your Life"
+title: "From Chaos to Zen: 10 Unconventional Habits for a Transformed Life"
 ---
 
 Life can often feel like a whirlwind of chaos and unpredictability, leaving us yearning for a sense of calm and inner peace. But what if the key to transforming our lives lies in embracing unusual habits that defy convention?
