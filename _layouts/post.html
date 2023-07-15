@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <h1 id="{{ page.title | slugify }}" class="post-title p-name" itemprop="name headline">
+            <a href="#{{ page.title | slugify }}">
+                {{ page.title | escape }}
+            </a>
+        </h1>
+
+        {% if page.cover_img_url and page.cover_img_url != '' %}
+        <img src="{{ page.cover_img_url }}" alt="Blog post cover">
+        {% endif %}
+
+        <p class="post-meta">
+            <i>{{ page.description | markdownify }}</i>
+
+        <div>
+            <span>
+                <b>Posted on:</b>
+            </span>
+
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}"
+                itemprop="datePublished">
+                {{ page.date | date: site.short_date }}
+            </time>
+        </div>
+        </p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
