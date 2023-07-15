@@ -7,17 +7,27 @@
             </a>
         </h2>
 
-        <span>
-            <i>{{ post.description | markdownify }}</i>
-        </span>
-
         <p class="post-meta">
+            <span>
+                <i>{{ post.description | markdownify }}</i>
+            </span>
+
+            {% if page.path == 'index.md' %}
+        <div>
+            <span>
+                <b>Categories:</b>
+            </span>
+
+            {% include post-categories.html categories=post.categories %}
+        </div>
+        {% endif %}
+
+        <span>
+            <b>Posted on:</b>
+        </span>
+        <span>
             {{ post.date | date: site.short_date }}
-            {% if page.title == 'Home' %}
-            <br>
-            <a
-                href="{{ post.categories | first | relative_url }}/">{{ post.categories | first | upcase }}</a>
-            {% endif %}
+        </span>
         </p>
     </li>
     {% endfor %}

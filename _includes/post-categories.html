@@ -1,0 +1,5 @@
+{% for category in include.categories %}
+<span>
+    <a href="{{ category | relative_url }}/">{{ category | upcase }}</a>
+</span>
+{% endfor %}
