@@ -1,0 +1,37 @@
+### Site metadata
+
+title: AI Inkpot
+description: "My blog of AI-inspired content"
+
+### Build settings
+
+url: https://michaelcurrin.github.io
+baseurl: /ai-inkpot
+repository: michaelcurrin/coding-blog
+
+theme: jekyll-theme-midnight
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+short_date: "%b %-d, %Y"
+
+google_analytics:
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - vendor/
+  - Gemfile
+  - LICENSE
+  - Makefile
+  - README.md
