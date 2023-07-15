@@ -1,0 +1,24 @@
+<ul>
+    {% for post in include.posts %}
+    <li>
+        <h2 class="post-title p-name">
+            <a href="{{ post.url | relative_url }}">
+                {{ post.title }}
+            </a>
+        </h2>
+
+        <span>
+            <i>{{ post.description | markdownify }}</i>
+        </span>
+
+        <p class="post-meta">
+            {{ post.date | date: site.short_date }}
+            {% if page.title == 'Home' %}
+            <br>
+            <a
+                href="{{ post.categories | first | relative_url }}/">{{ post.categories | first | upcase }}</a>
+            {% endif %}
+        </p>
+    </li>
+    {% endfor %}
+</ul>
