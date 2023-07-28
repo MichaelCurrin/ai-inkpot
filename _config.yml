@@ -17,7 +17,7 @@ plugins:
 
 short_date: "%b %-d, %Y"
 
-google_analytics:
+google_analytics: G-Q26CTJBKEH
 
 defaults:
   - scope:
